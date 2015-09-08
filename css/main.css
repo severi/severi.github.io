@@ -1,5 +1,41 @@
 /*! HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ */
 
+
+
+.content{
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    text-align:center;
+}
+
+h1 {
+    font-size: 5em;
+    margin:0px;
+    font-family: 'Raleway', sans-serif;
+}
+.link-container{
+    padding-right:4.5em;
+}
+
+.link-logo{
+    padding-left: 1em;
+    padding-right: 1em;
+    height: 2em;
+    widht: auto;
+
+    -webkit-transition: all 1s; /* For Safari 3.1 to 6.0 */
+    transition: all 1s;
+}
+
+.link-logo:hover{
+    -webkit-transform: scale(1.1); 
+    -ms-transform: scale(1.1); 
+    transform: scale(1.1); 
+}
+
+
 /*
  * What follows is the result of much research on cross-browser styling.
  * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
