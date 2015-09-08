@@ -1,13 +1,18 @@
-/*! HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ */
 
-
+body{
+    background-color: #FAFAFA;
+}
 
 .content{
+    width:40em;
     position:absolute;
     left:50%;
     top:50%;
-    transform: translate(-50%, -50%);
     text-align:center;
+    
+    -webkit-transform:translate(-50%, -50%);
+    -ms-transform:translate(-50%, -50%);
+    transform:translate(-50%, -50%);
 }
 
 h1 {
@@ -15,8 +20,34 @@ h1 {
     margin:0px;
     font-family: 'Raleway', sans-serif;
 }
-.link-container{
+h2 {
+    font-size: 1em;
+    margin:0px;
+    font-family: 'Raleway', sans-serif;
+    -webkit-animation:   PULSE 10s infinite;
+    animation:   PULSE 10s infinite;
+}
+.h2-container{
     padding-right:4.5em;
+}
+
+@-webkit-keyframes PULSE{
+    0% { -webkit-transform: scale(1); transform: scale(1);}
+    90% { -webkit-transform: scale(1); transform: scale(1);}
+    95% { -webkit-transform: scale(1.115); transform: scale(1.115);}
+    100% { -webkit-transform: scale(1); transform: scale(1);}
+}
+
+
+@keyframes PULSE{
+    0% { -webkit-transform: scale(1); transform: scale(1);}
+    90% { -webkit-transform: scale(1); transform: scale(1);}
+    95% { -webkit-transform: scale(1.115); transform: scale(1.115);}
+    100% { -webkit-transform: scale(1); transform: scale(1);}
+}
+
+.link-container{
+    padding-right:4.7em;
 }
 
 .link-logo{
