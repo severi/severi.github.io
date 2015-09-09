@@ -4,7 +4,7 @@ body{
 }
 
 .content{
-    width:40em;
+    width:100%;
     position:absolute;
     left:50%;
     top:50%;
@@ -16,20 +16,60 @@ body{
 }
 
 h1 {
-    font-size: 5em;
     margin:0px;
     font-family: 'Raleway', sans-serif;
 }
 h2 {
-    font-size: 1em;
     margin:0px;
     font-family: 'Raleway', sans-serif;
     -webkit-animation:   PULSE 10s infinite;
     animation:   PULSE 10s infinite;
 }
 .h2-container{
-    padding-right:4.5em;
+    padding-right:4.5%;
 }
+.link-container{
+    padding-right:2.8%;
+}
+.link-logo{
+    margin-right: 2em;
+    widht: auto;
+    height: 2em;
+    
+    -webkit-transition: all 1s; /* For Safari 3.1 to 6.0 */
+    transition: all 1s;
+}
+
+
+.link-logo:hover{
+    -webkit-transform: scale(1.1); 
+    -ms-transform: scale(1.1); 
+    transform: scale(1.1); 
+}
+
+@media (min-width: 700px) {
+    h1 {
+        font-size: 5.5vw;
+    }
+    h2 {
+        font-size: 1.4vw;
+    }
+    .link-logo{
+        height: 2em;
+    }
+}
+@media (max-width: 600px) {
+    h1 {
+        font-size: 12vw;
+    }
+    h2 {
+        font-size: 0.85em;
+    }
+    .link-logo{
+        height: 1.4em;
+    }
+}
+
 
 @-webkit-keyframes PULSE{
     0% { -webkit-transform: scale(1); transform: scale(1);}
@@ -46,25 +86,6 @@ h2 {
     100% { -webkit-transform: scale(1); transform: scale(1);}
 }
 
-.link-container{
-    padding-right:4.7em;
-}
-
-.link-logo{
-    padding-left: 1em;
-    padding-right: 1em;
-    height: 2em;
-    widht: auto;
-
-    -webkit-transition: all 1s; /* For Safari 3.1 to 6.0 */
-    transition: all 1s;
-}
-
-.link-logo:hover{
-    -webkit-transform: scale(1.1); 
-    -ms-transform: scale(1.1); 
-    transform: scale(1.1); 
-}
 
 
 /*
