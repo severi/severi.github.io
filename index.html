@@ -2,10 +2,46 @@
 layout: default
 ---
 
+<header class="color-1">
+  <h1>Severi Haverila<span>Welcome</span></h1>
+  <ul>
+    <li><a href="#about">About Me</a></li>
+    <li><a href="#work">Work Projects</a></li>
+    <li><a href="#personal">Personal Projects</a></li>
+    <li><a href="#university">University Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</header>
+<section class="color-2" id="about">
+  <h2>About Me</h2>
+  <div class="project col-1">
+    <div class="column text">
+      <p>Galaxies a still more glorious dawn awaits shores of the cosmic ocean bits of moving fluff the only home we've ever known finite but unbounded colonies astonishment laws of physics a very small stage in a vast cosmic arena brain is the seed of intelligence realm of the galaxies Apollonius of Perga rogue intelligent beings courage of our questions made in the interiors</p>
+    </div>
+  </div>
+</section>
+<section class="ss-style-diagonal-2 color-4" id="work">
+  <h2>Work</h2>
+  {% for post in site.categories.work %}
+    {{post}}
+  {% endfor %}
+</section>
 
-asdasd
-{% for post in site.posts | sort: 'start'%}
-<h1>{{post.name}}</h1>
-<p>{{post.start}} - {{post.end}}</p>
-<p>{{post.content}}</p>o
-{% endfor %}
+<section class="ss-style-diagonal-1 color-3" id="personal">
+  <h2>Personal Projects</h2>
+  {% for post in site.categories.personal %}
+    {{post}}
+  {% endfor %}
+</section>
+
+<section class="ss-style-diagonal-2 color-1" id="university">
+  <h2>University Projects</h2>
+    {% for post in site.categories.university %}
+    {{post}}
+  {% endfor %}
+</section>
+
+<section class="color-2" id="contact">
+  <h2>Contact Me!</h2>
+  <p>Galaxies a still more glorious dawn awaits shores of the cosmic ocean bits of moving fluff the only home we've ever known finite but unbounded colonies astonishment laws of physics a very small stage in a vast cosmic arena brain is the seed of intelligence realm of the galaxies Apollonius of Perga rogue intelligent beings courage of our questions made in the interiors</p>        
+</section>
