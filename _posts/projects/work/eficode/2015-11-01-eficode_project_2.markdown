@@ -1,5 +1,5 @@
 ---
-name: Customer &#58; private sector company
+name: Private sector company - AWS VPC setup automation with Ansible
 when: 11/2015–
 role: Devops Consultant
 technologies: Ansible, HAProxy, Keepalived, AWS

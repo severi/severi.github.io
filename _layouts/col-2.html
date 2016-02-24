@@ -5,8 +5,11 @@ layout: default
 <div class="project col-2">
   <div class="project_info">
     <h4>{{page.name}}</h4>
-    <p>{{page.when}}</p>
-    <p>{{page.duration}}</p>
+  <p>{{page.when}}</p>
+  {% if page.role %}
+  <p>Role: {{page.role}}</p>
+  {% endif %}
+  <p>Technologies: {{page.technologies}}</p>
   </div>
   <div class="project_details">
     <div class="column">

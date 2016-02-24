@@ -1,0 +1,13 @@
+---
+name: ÖBB - Yield Management
+when: 09/2014-07/2015
+role: Software Engineer
+technologies:  Java, Hibernate, Primefaces, Oracle­DB
+
+layout: col-1
+category: work
+---
+
+I worked as part of a team of 8 persons on a project for the Austrian 
+Railways. We implemented an "Yield Management-system", which was a 
+part of big Ticket System renewal.

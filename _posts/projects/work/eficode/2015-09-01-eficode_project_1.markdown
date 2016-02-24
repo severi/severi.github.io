@@ -1,8 +1,8 @@
 ---
-name: Customer &#58; private sector company
+name: Private sector company - Web Application
 when: 08/2015–11/2015
 role: Software Engineer
-technologies: Java, Ansible, Javascript, NodeJS, Spring Boot, RobotFramework
+technologies: Java, Ansible, Vagrant,  Javascript, NodeJS, Spring Boot, RobotFramework
 
 layout: col-1
 category: work
