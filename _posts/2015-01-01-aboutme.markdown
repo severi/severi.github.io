@@ -1,0 +1,9 @@
+---
+layout: about
+category: about
+picture: /img/severi.jpg
+---
+
+Hi! Im this and that, and i like that and that. please asdasds Hi! Im this and that, and i like that and that. please asdasds Hi! Im this and that, and i like that and that. please asdasds Hi! Im this and that, and i like that and that. please asdasds Hi! Im this and that, and i like that and that. please asdasds Hi! Im this and that, and i like that and that. please asdasds Hi! Im this and that, and i like that and that. please asdasds Hi! Im this and that, and i like that and that
+
+
