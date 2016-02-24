@@ -14,11 +14,9 @@ layout: default
 </header>
 <section class="color-2" id="about">
   <h2>About Me</h2>
-  <div class="project col-1">
-    <div class="column text">
-      <p>Galaxies a still more glorious dawn awaits shores of the cosmic ocean bits of moving fluff the only home we've ever known finite but unbounded colonies astonishment laws of physics a very small stage in a vast cosmic arena brain is the seed of intelligence realm of the galaxies Apollonius of Perga rogue intelligent beings courage of our questions made in the interiors</p>
-    </div>
-  </div>
+  {% for post in site.categories.about %}
+    {{post}}
+  {% endfor %}
 </section>
 <section class="ss-style-diagonal-2 color-4" id="work">
   <h2>Work</h2>
@@ -36,7 +34,7 @@ layout: default
 
 <section class="ss-style-diagonal-2 color-1" id="university">
   <h2>University Projects</h2>
-    {% for post in site.categories.university %}
+  {% for post in site.categories.university %}
     {{post}}
   {% endfor %}
 </section>
