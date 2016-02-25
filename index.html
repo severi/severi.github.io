@@ -1,18 +1,19 @@
 ---
 layout: default
 ---
-
+<div id="navi">
+  <ul>
+    <li><a href="#about">About Me</a></li>
+    <li><a href="#work">Work Projects</a></li>
+    <li><a href="#personal">Personal Projects</a></li>
+    <li><a href="#university">University Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</div>
 <header class="color-1">
   <div id="headerContainer">
-    <h1>Severi Haverila<span>Welcome</span></h1>
-    <ul>
-      <li><a href="#about">About Me</a></li>
-      <li><a href="#work">Work Projects</a></li>
-      <li><a href="#personal">Personal Projects</a></li>
-      <li><a href="#university">University Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    <div id="headerContainer">
+    <h1>Severi Haverila<span>Portfolio</span></h1>
+    <div/>
 </header>
 <section class="section-border-triangles color-2" id="about">
   <h2>About Me</h2>
@@ -20,14 +21,14 @@ layout: default
     {{post}}
   {% endfor %}
 </section>
-<section class="section-border-diagonal-2 color-5" id="work">
+<section class="section-border-diagonal-2 color-3" id="work">
   <h2>Work</h2>
   {% for post in site.categories.work %}
     {{post}}
   {% endfor %}
 </section>
 
-<section class="section-border-diagonal-1 color-3" id="personal">
+<section class="section-border-diagonal-1 color-4" id="personal">
   <h2>Personal Projects</h2>
   {% for post in site.categories.personal %}
     {{post}}
@@ -41,7 +42,7 @@ layout: default
   {% endfor %}
 </section>
 
-<section class="section-border-triangles color-2" id="contact">
+<section class="section-border-triangles color-6" id="contact">
   <h2>Contact Me!</h2>
   <p>Galaxies a still more glorious dawn awaits shores of the cosmic ocean bits of moving fluff the only home we've ever known finite but unbounded colonies astonishment laws of physics a very small stage in a vast cosmic arena brain is the seed of intelligence realm of the galaxies Apollonius of Perga rogue intelligent beings courage of our questions made in the interiors</p>        
 </section>
