@@ -27,9 +27,15 @@
     <script type="text/javascript">
     function gen_mail_to_link(lhs,rhs) {
         document.write("<a href=\"mailto");
-        document.write(":" + lhs + "@");
-        document.write(rhs + "\">" + lhs + "@" + rhs + "<\/a>");
+        document.write(":" + lhs + "@");         
+        document.write(rhs + "\">"+lhs+"@"+rhs+"<\/a>");
     }
+    function gen_mail_to_link2(lhs,rhs,txt) {
+        document.write("<a href=\"mailto");
+        document.write(":" + lhs + "@");         
+        document.write(rhs + "\">"+txt+"<\/a>");
+    }
+          
 </script>
   </head>
   <body>
