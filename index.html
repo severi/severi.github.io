@@ -33,9 +33,14 @@ layout: default
     </div>
   {% endfor %}
 </section>
-<section class="section-border-triangles color-2" id="work">
-  <h2>Work</h2>
-  {% for post in site.categories.work %}
+
+
+{% assign myArray = "work|personal|university" | split: "|" %}
+   {% for projectType in myArray %}
+<section class="section-border-triangles color-{{projectType}}" id="{{projectType}}">
+  <h2>{{projectType | capitalize}} Projects</h2>
+  {% for post in site.posts %}
+  {% if post.category == projectType %}
   {% if post.layout == "col-2" %}
   <div class="project col-2">
     <div class="project_info">
@@ -71,93 +76,10 @@ layout: default
     </div>
   </div>
   {% endif %}
-
+    {% endif %}
   {% endfor %}
 </section>
-
-<section class="section-border-triangles  color-1" id="personal">
-  <h2>Personal Projects</h2>
-  {% for post in site.categories.personal %}
-  {% if post.layout == "col-2" %}
-  <div class="project col-2">
-    <div class="project_info">
-      <h3>{{post.name}}</h3>
-      <p><strong>Technologies:</strong> {{post.technologies}}</p>
-      <p><strong>Date:</strong> {{post.when}}</p>
-      {% if post.role %}
-      <p><strong>Role:</strong> {{post.role}}</p>
-      {% endif %}
-    </div>
-    <div class="project_details">
-      <div class="column">
-        <img src="{{post.picture}}" class="projectpic icon"/>
-      </div>
-      <div class="column">
-        <p>{{post.content}}</p>
-      </div>
-    </div>
-  </div>
-  {% endif %}
-  {% if post.layout == "col-1" %}
-  <div class="project col-1">
-    <div class="project_info">
-      <h3>{{post.name}}</h3>
-      <p><strong>Technologies:</strong> {{post.technologies}}</p>
-      <p><strong>Date:</strong> {{post.when}}</p>
-      {% if post.role %}
-      <p><strong>Role:</strong> {{post.role}}</p>
-      {% endif %}
-    </div>
-    <div class="column text">
-      <p>{{post.content}}</p>
-    </div>
-  </div>
-  {% endif %}
-
-  {% endfor %}
-</section>
-
-<section class="section-border-triangles  color-2" id="university">
-  <h2>University Projects</h2>
-  {% for post in site.categories.university %}
-  {% if post.layout == "col-2" %}
-  <div class="project col-2">
-    <div class="project_info">
-      <h3>{{post.name}}</h3>
-      <p><strong>Technologies:</strong> {{post.technologies}}</p>
-      <p><strong>Date:</strong> {{post.when}}</p>
-      {% if post.role %}
-      <p><strong>Role:</strong> {{post.role}}</p>
-      {% endif %}
-    </div>
-    <div class="project_details">
-      <div class="column">
-        <img src="{{post.picture}}" class="projectpic icon"/>
-      </div>
-      <div class="column">
-        <p>{{post.content}}</p>
-      </div>
-    </div>
-  </div>
-  {% endif %}
-  {% if post.layout == "col-1" %}
-  <div class="project col-1">
-    <div class="project_info">
-      <h3>{{post.name}}</h3>
-      <p><strong>Technologies:</strong> {{post.technologies}}</p>
-      <p><strong>Date:</strong> {{post.when}}</p>
-      {% if post.role %}
-      <p><strong>Role:</strong> {{post.role}}</p>
-      {% endif %}
-    </div>
-    <div class="column text">
-      <p>{{post.content}}</p>
-    </div>
-  </div>
-  {% endif %}
-
-  {% endfor %}
-</section>
+{% endfor %}
 
 <section class="section-border-triangles color-1" id="contact">
   <h2>Contact Me!</h2>
