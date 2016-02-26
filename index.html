@@ -19,27 +19,143 @@ layout: default
 <section class="color-1" id="about">
   <h2>About Me</h2>
   {% for post in site.categories.about %}
-    {{post}}
+    <div class="project col-2">
+      <div class="column">
+        <img src="{{post.picture}}" class="roundpic"/>
+      </div>
+      <div class="column text left">
+        <p>{{post.content}}</p>
+        <div class="link-container">
+          <a target="_blank" href="https://fi.linkedin.com/pub/severi-haverila/57/504/8b"><img class="link-logo" src="/img/linkedin.png" /></a>
+          <a target="_blank" href="https://github.com/severi"><img class="link-logo" src="/img/github.png" /></a>
+        </div>
+      </div>
+    </div>
   {% endfor %}
 </section>
 <section class="section-border-triangles color-2" id="work">
   <h2>Work</h2>
   {% for post in site.categories.work %}
-    {{post}}
+  {% if post.layout == "col-2" %}
+  <div class="project col-2">
+    <div class="project_info">
+      <h3>{{post.name}}</h3>
+      <p><strong>Technologies:</strong> {{post.technologies}}</p>
+      <p><strong>Date:</strong> {{post.when}}</p>
+      {% if post.role %}
+      <p><strong>Role:</strong> {{post.role}}</p>
+      {% endif %}
+    </div>
+    <div class="project_details">
+      <div class="column">
+        <img src="{{post.picture}}" class="projectpic icon"/>
+      </div>
+      <div class="column">
+        <p>{{post.content}}</p>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+  {% if post.layout == "col-1" %}
+  <div class="project col-1">
+    <div class="project_info">
+      <h3>{{post.name}}</h3>
+      <p><strong>Technologies:</strong> {{post.technologies}}</p>
+      <p><strong>Date:</strong> {{post.when}}</p>
+      {% if post.role %}
+      <p><strong>Role:</strong> {{post.role}}</p>
+      {% endif %}
+    </div>
+    <div class="column text">
+      <p>{{post.content}}</p>
+    </div>
+  </div>
+  {% endif %}
+
   {% endfor %}
 </section>
 
 <section class="section-border-triangles  color-1" id="personal">
   <h2>Personal Projects</h2>
   {% for post in site.categories.personal %}
-    {{post}}
+  {% if post.layout == "col-2" %}
+  <div class="project col-2">
+    <div class="project_info">
+      <h3>{{post.name}}</h3>
+      <p><strong>Technologies:</strong> {{post.technologies}}</p>
+      <p><strong>Date:</strong> {{post.when}}</p>
+      {% if post.role %}
+      <p><strong>Role:</strong> {{post.role}}</p>
+      {% endif %}
+    </div>
+    <div class="project_details">
+      <div class="column">
+        <img src="{{post.picture}}" class="projectpic icon"/>
+      </div>
+      <div class="column">
+        <p>{{post.content}}</p>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+  {% if post.layout == "col-1" %}
+  <div class="project col-1">
+    <div class="project_info">
+      <h3>{{post.name}}</h3>
+      <p><strong>Technologies:</strong> {{post.technologies}}</p>
+      <p><strong>Date:</strong> {{post.when}}</p>
+      {% if post.role %}
+      <p><strong>Role:</strong> {{post.role}}</p>
+      {% endif %}
+    </div>
+    <div class="column text">
+      <p>{{post.content}}</p>
+    </div>
+  </div>
+  {% endif %}
+
   {% endfor %}
 </section>
 
 <section class="section-border-triangles  color-2" id="university">
   <h2>University Projects</h2>
   {% for post in site.categories.university %}
-    {{post}}
+  {% if post.layout == "col-2" %}
+  <div class="project col-2">
+    <div class="project_info">
+      <h3>{{post.name}}</h3>
+      <p><strong>Technologies:</strong> {{post.technologies}}</p>
+      <p><strong>Date:</strong> {{post.when}}</p>
+      {% if post.role %}
+      <p><strong>Role:</strong> {{post.role}}</p>
+      {% endif %}
+    </div>
+    <div class="project_details">
+      <div class="column">
+        <img src="{{post.picture}}" class="projectpic icon"/>
+      </div>
+      <div class="column">
+        <p>{{post.content}}</p>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+  {% if post.layout == "col-1" %}
+  <div class="project col-1">
+    <div class="project_info">
+      <h3>{{post.name}}</h3>
+      <p><strong>Technologies:</strong> {{post.technologies}}</p>
+      <p><strong>Date:</strong> {{post.when}}</p>
+      {% if post.role %}
+      <p><strong>Role:</strong> {{post.role}}</p>
+      {% endif %}
+    </div>
+    <div class="column text">
+      <p>{{post.content}}</p>
+    </div>
+  </div>
+  {% endif %}
+
   {% endfor %}
 </section>
 
