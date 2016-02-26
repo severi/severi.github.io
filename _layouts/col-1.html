@@ -2,12 +2,14 @@
 layout: default
 ---
 <div class="project col-1">
-  <h4>{{page.name}}</h4>
-  <p>{{page.when}}</p>
-  {% if page.role %}
-  <p>Role: {{page.role}}</p>
-  {% endif %}
-  <p>Technologies: {{page.technologies}}</p>
+  <div class="project_info">
+    <h3>{{page.name}}</h3>
+    <p><strong>Technologies:</strong> {{page.technologies}}</p>
+    <p><strong>Date:</strong> {{page.when}}</p>
+    {% if page.role %}
+    <p><strong>Role:</strong> {{page.role}}</p>
+    {% endif %}
+  </div>
   <div class="column text">
     <p>{{content}}</p>
   </div>
