@@ -221,7 +221,7 @@ section p {
 
 .projectpic {
 	display: block;
-	width: 4em;
+	width: 100%;
 	height: auto;
 	border-radius: 1%;
 	color: #fff;
@@ -278,7 +278,7 @@ section::after {
     }
 }
 
-@media screen and (max-width: 81em) {
+@media screen and (max-width: 68em) {
 	.column {
 		display: block;
 		width: 100% !important;
@@ -288,7 +288,7 @@ section::after {
         .project_details:first-child ,
         .project_details:nth-child(2){
 		text-align: justify !important;
-	}
+	}       
 }
 /*
  * animations
