@@ -1,13 +1,13 @@
 /***/
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,700,100);
 
-ul {
+nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-li {
+nav ul li {
     display: inline;
     padding:1em;
 }
@@ -60,6 +60,14 @@ li:hover,
 a:hover{
     text-decoration: underline;
 }
+
+#about > .project > .column > ul > li{
+    font-size: 1.3em;
+}
+#about > .project > .column > ul > li:hover{
+    text-decoration: none !important;
+}
+
 
 .container > header {
 	margin: 0 auto;
