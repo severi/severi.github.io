@@ -1,5 +1,5 @@
 ---
-name: Private sector company - Web Application
+name: Credit Information Company - Web Application
 when: 08/2015–11/2015
 role: Software Engineer
 technologies: Java, Ansible, Vagrant,  Javascript, NodeJS, Spring Boot, RobotFramework

@@ -1,5 +1,5 @@
 ---
-name: Private sector company - AWS VPC setup automation with Ansible
+name: Identity Services Company - AWS VPC setup automation with Ansible
 when: 11/2015–
 role: Devops Consultant
 technologies: Ansible, HAProxy, Keepalived, AWS
