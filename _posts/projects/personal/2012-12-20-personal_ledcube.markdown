@@ -2,7 +2,7 @@
 name: 3x3x3 LED Cube
 when: 12/2012
 role: 
-technologies: Electronics, Arduino
+keywords: Electronics, Arduino
 
 layout: col-1
 category: personal

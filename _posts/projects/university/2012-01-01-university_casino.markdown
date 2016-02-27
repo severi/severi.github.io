@@ -2,7 +2,7 @@
 name: Casino Card Game
 when: 01/2012–04/2012
 role: Programmer
-technologies: Python, PyQt
+keywords: Python, PyQt
 
 layout: col-2
 category: university

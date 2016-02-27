@@ -2,7 +2,7 @@
 name: Identity Services Company - AWS VPC setup automation with Ansible
 when: 11/2015–
 role: DevOps Consultant
-technologies: Ansible, HAProxy, Keepalived, AWS, OpenLDAP
+keywords: Ansible, HAProxy, Keepalived, AWS, OpenLDAP
 
 layout: col-1
 category: work

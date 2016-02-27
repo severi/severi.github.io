@@ -2,7 +2,7 @@
 name: ÖBB - Yield Management
 when: 09/2014-07/2015
 role: Software Engineer
-technologies:  Java, Hibernate, Primefaces, Oracle­DB
+keywords:  Java, Hibernate, Primefaces, Oracle­DB
 
 layout: col-1
 category: work

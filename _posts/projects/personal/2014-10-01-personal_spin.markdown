@@ -2,7 +2,7 @@
 name: Spin - A Minimal Art Memory Game
 when: 10/2014-06/2015
 role: Programmer
-technologies:  C++, openFrameworks, Javascript,ThreeJS
+keywords:  C++, openFrameworks, Javascript,ThreeJS
 
 layout: col-1
 category: personal

@@ -2,7 +2,7 @@
 name: Multiplayer Pacman
 when: 09/2011–12/2011
 role: Programmer
-technologies: C++, SFML
+keywords: C++, SFML
 
 layout: col-2
 category: university

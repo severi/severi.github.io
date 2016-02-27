@@ -2,7 +2,7 @@
 name: Location-based mobile app
 when: 12/2015-
 role: Programmer
-technologies:  Ionic, Ansible, Vagrant
+keywords:  Ionic, Ansible, Vagrant
 
 layout: col-1
 category: personal

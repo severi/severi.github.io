@@ -2,7 +2,7 @@
 name: Binary Analysis
 when: 04/2014–05/2014
 role: Hacker
-technologies: Binary Analysis, Assembly
+keywords: Binary Analysis, Assembly
 
 layout: col-1
 category: university

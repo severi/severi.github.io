@@ -2,7 +2,7 @@
 name: Web Application Security
 when: 03/2014–04/2014
 role: Hacker
-technologies: Web Security, OWASP
+keywords: Web Security, OWASP
 
 layout: col-1
 category: university

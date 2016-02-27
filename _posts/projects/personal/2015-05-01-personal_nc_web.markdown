@@ -2,7 +2,7 @@
 name: AngularJS web page
 when: 05/2015-08/2015
 role: Programmer
-technologies:  MongoDB, ExpressJS, AngularJS, NodeJS
+keywords:  MongoDB, ExpressJS, AngularJS, NodeJS
 
 layout: col-1
 category: personal

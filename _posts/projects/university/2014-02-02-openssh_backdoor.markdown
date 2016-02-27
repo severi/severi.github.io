@@ -2,7 +2,7 @@
 name: OpenSSH Backdoor
 when: 02/2014–03/2014
 role: Hacker
-technologies: C, OpenSSH, hacker skillz
+keywords: C, OpenSSH, hacker skillz
 
 layout: col-1
 category: university

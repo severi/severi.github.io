@@ -2,7 +2,7 @@
 name: Asfinag - On the way
 when: 07/2014-09/2014
 role: Software Engineer
-technologies:  Phonegap, Javascript, HTML, CSS
+keywords:  Phonegap, Javascript, HTML, CSS
 
 layout: col-1
 category: work

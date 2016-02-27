@@ -2,7 +2,7 @@
 name: Management Dashboards - Relex
 when: 09/2015–04/2016
 role: Scrum Master
-technologies: ReactJS, Docker, Jenkins, Robot Framework
+keywords: ReactJS, Docker, Jenkins, Robot Framework, Team Leading
 
 layout: col-1
 category: university
