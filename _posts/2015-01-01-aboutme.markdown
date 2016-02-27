@@ -8,7 +8,7 @@ picture: /img/severi.jpg
 <strong>Shortly</strong>
 
 
-- SW Developer and Devops enthusiast.
+- SW Developer and DevOps enthusiast.
 - M.Sc. Student with international work background.
 - Enjoys working with other people.
 - Constantly trying to improve my knowledge.
