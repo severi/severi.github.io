@@ -154,6 +154,10 @@ section h2 {
         text-decoration: none;
 }
 
+#contact {
+    padding:2em;
+}
+
 .project_info  {
     text-align: left;
 }
@@ -288,11 +292,9 @@ section::after {
 	top: -35px;
         background: #FAFAFA;
 }
-
 .section-border-triangles::after {
-	bottom: -35px;
-	z-index: 10;
-	background: #FAFAFA;
+    bottom: -35px;
+    background: #FAFAFA;
 }
 
 /* Media Queries for the layout */
