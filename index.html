@@ -19,29 +19,38 @@ layout: default
 <section class="color-1" id="about">
   <h2>About Me</h2>
   {% for post in site.categories.about %}
+    {% if post.subType == "aboutShort" %}
     <div class="project col-2">
       <div class="column">
         <img src="{{post.picture}}" class="roundpic"/>
       </div>
       <div class="column text left">
         <p>{{post.content}}</p>
-        <br/>
-        <p>
-          Questions? Send me a message on 
-          <strong><a target="_blank" href="https://fi.linkedin.com/pub/severi-haverila/57/504/8b">LinkedIn</a></strong>
-          or send me an
-          <strong><script type="text/javascript">
-            gen_mail_to_link2('severi','haverila.com', 'Email');
-          </script></strong>.
-
-          Public projects in this portfolio (and other random stuff) can be found on my
-          <strong><a target="_blank" href="https://github.com/severi">Github</a></strong>.
-
-          
-        </p>
       </div>
     </div>
-  {% endfor %}
+    {% endif %}
+    {% endfor %}
+      {% for post in site.categories.about %}
+    {% if post.subType == "aboutLong" %}
+    <div class="project col-1">
+      <div class="column text">
+        <p>{{post.content}}</p>
+        <p>
+    Questions? Send me a message on 
+    <strong><a target="_blank" href="https://fi.linkedin.com/pub/severi-haverila/57/504/8b">LinkedIn</a></strong>
+    or send me an
+    <strong><script type="text/javascript">
+        gen_mail_to_link2('severi','haverila.com', 'Email');
+    </script></strong>.
+
+    
+    Public projects in this portfolio (and other random stuff) can be found on my
+    <strong><a target="_blank" href="https://github.com/severi">Github</a></strong>.
+  </p>
+      </div>
+    </div>
+    {% endif %}
+    {% endfor %}
 </section>
 
 
