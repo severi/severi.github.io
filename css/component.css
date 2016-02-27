@@ -154,6 +154,10 @@ section h2 {
         text-decoration: none;
 }
 
+.project_info  {
+    text-align: left;
+}
+
 .project {
     padding: 1em 1em 2em 1em;
     line-height: 1.3;
