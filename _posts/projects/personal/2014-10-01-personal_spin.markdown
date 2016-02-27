@@ -8,7 +8,7 @@ layout: col-1
 category: personal
 ---
 
-Project done with together with a friend. My work consisted of programming with C++ using openFrameworks, and implementing a prototype with Javascript using ThreeJS.
+Project done together with a friend. My work consisted of programming with C++ using openFrameworks, and implementing a prototype with Javascript using ThreeJS.
 
 <https://itunes.apple.com/fi/app/id936105714>
 
