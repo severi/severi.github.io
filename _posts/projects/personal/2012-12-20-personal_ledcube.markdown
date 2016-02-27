@@ -10,5 +10,6 @@ category: personal
 
 This little project was more about learning the use of Arduino and basic electronics than programming. Using an Arduino I was able programmatically to control each of the 27 LEDs separately.
 
-<https://www.dropbox.com/s/xeftd0uprlh7sxf/Video%2023.12.2012%2022.40.31.mov?dl=0>
+
+<iframe  title="LED Cube" width="480" height="390" src="https://www.youtube.com/embed/0c4gr0EkbHc" frameborder="0" allowfullscreen></iframe>
 
