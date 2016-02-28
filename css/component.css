@@ -1,16 +1,6 @@
 /***/
 @import url(https://fonts.googleapis.com/css?family=Raleway:400);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,700,700italic);
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    padding:1em;
-}
 
 .color-1 {
     color: #000;
@@ -128,8 +118,12 @@ body {
 }
 
 .container {
-	overflow: hidden;
+    overflow: hidden;
+    margin:0px;
+    padding:0px;
+    width:100vw;
 }
+
 
 header > h1 {
 -webkit-animation:   PULSE 10s infinite;
@@ -352,3 +346,43 @@ section::after {
     100% { -webkit-transform: scale(1); transform: scale(1);}
 }
 
+
+/*MEDIA QUERY*/
+@media only screen and (max-width : 640px) {
+
+
+	#menu-icon {
+
+	    display:inline-block;
+            float:right;
+
+	}
+
+	nav ul, nav:active ul { 
+
+		display: none;
+		position: absolute;
+		padding: 20px;
+		background: #fff;
+		border: 5px solid #444;
+		right: 20px;
+		top: 60px;
+		width: 50%;
+		border-radius: 4px 0 4px 4px;
+
+	}
+
+	nav li {
+
+		text-align: center;
+		width: 100%;
+		padding: 10px 0;
+		margin: 0;
+
+	}
+
+	nav:hover ul {
+
+		display: block;
+
+	}
