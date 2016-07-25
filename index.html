@@ -2,137 +2,17 @@
 layout: default
 ---
 
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#work">Work Projects</a></li>
-        <li><a href="#personal">Personal Projects</a></li>
-        <li><a href="#university">University Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-
-
 
 
 
 <header class="color-1" id="home">
   <div id="headerContainer">
-    <h1>Severi Haverila<span>Portfolio</span></h1>
+    <h1>Severi Haverila</h1>
+    <ul class="actions">
+        <li><a href="/portfolio" class="btn btn-primary">Portfolio</a></li>
+        <li><a href="/blog" class="btn btn-default">Blog</a></li>
+      </ul>
+    
     <div/>
 </header>
-<section class="color-1" id="about">
-  <h2>About Me</h2>
-  {% for post in site.categories.about %}
-    {% if post.subType == "aboutShort" %}
-    <div class="project col-2">
-      <div class="column">
-        <img src="{{post.picture}}" class="roundpic"/>
-      </div>
-      <div class="column text left">
-        <p>{{post.content}}</p>
-      </div>
-    </div>
-    {% endif %}
-    {% endfor %}
-      {% for post in site.categories.about %}
-    {% if post.subType == "aboutLong" %}
-    <div class="project col-1">
-      <div class="column text">
-        <p>{{post.content}}</p>
-        <p>
-    Questions? You can find me on
-    <strong><a target="_blank" href="https://fi.linkedin.com/pub/severi-haverila/57/504/8b">LinkedIn</a></strong>
-    or send me a an
-    <strong><script type="text/javascript">
-        gen_mail_to_link2('severi','haverila.com', 'Email');
-    </script></strong>.
 
-    
-    Public projects in this portfolio (and other random stuff) can be found on my
-    <strong><a target="_blank" href="https://github.com/severi">Github</a></strong>.
-  </p>
-      </div>
-    </div>
-    {% endif %}
-    {% endfor %}
-</section>
-
-
-{% assign myArray = "work|personal|university" | split: "|" %}
-   {% for projectType in myArray %}
-<section class="section-border-triangles color-{{projectType}}" id="{{projectType}}">
-  <h2>{{projectType | capitalize}} Projects</h2>
-  {% for post in site.posts %}
-  {% if post.category == projectType %}
-  {% if post.layout == "col-2" %}
-  <div class="project col-2">
-    <div class="project_info">
-      <h3>{{post.name}}</h3>
-      <p><strong>Keywords:</strong> {{post.keywords}}</p>
-      <p><strong>Date:</strong> {{post.when}}</p>
-      {% if post.role %}
-      <p><strong>Role:</strong> {{post.role}}</p>
-      {% endif %}
-    </div>
-    <div class="project_details">
-      <div class="column">
-        <p>{{post.content}}</p>
-      </div>
-      <div class="column">
-        <img src="{{post.picture}}" class="projectpic icon"/>
-      </div>
-    </div>
-  </div>
-  {% endif %}
-  {% if post.layout == "col-1" %}
-  <div class="project col-1">
-    <div class="project_info">
-      <h3>{{post.name}}</h3>
-      <p><strong>Keywords:</strong> {{post.keywords}}</p>
-      <p><strong>Date:</strong> {{post.when}}</p>
-      {% if post.role %}
-      <p><strong>Role:</strong> {{post.role}}</p>
-      {% endif %}
-    </div>
-    <div class="column text">
-      <p>{{post.content}}</p>
-    </div>
-  </div>
-  {% endif %}
-    {% endif %}
-  {% endfor %}
-</section>
-{% endfor %}
-
-<section class="color-1" id="contact">
-  <div class="col-3">
-    <div class="column">
-      <script type="text/javascript"> 
-        gen_mail_to_link('severi','haverila.com');
-      </script>
-    </div>
-    <div class="column">
-          <a target="_blank" href="https://fi.linkedin.com/pub/severi-haverila/57/504/8b">LinkedIn</a>
-    </div>
-    <div class="column">
-      <a target="_blank" href="https://github.com/severi">Github</a>
-    </div>
-    </div>
-</section>
