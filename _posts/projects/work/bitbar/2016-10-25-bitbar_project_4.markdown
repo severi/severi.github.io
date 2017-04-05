@@ -1,6 +1,6 @@
 ---
-name: Image Recognition Library
-when: 10/2016–11/2016
+name: Bitbar Inc - Image Recognition Library
+when: 10/2016–11/2016 & 02/2017–03/2017
 role: Software Engineer
 keywords: Java, Appium, OpenCV, Refactoring
 
@@ -12,4 +12,4 @@ I created an image recognition library for mobile test automation out of an exis
 
 The library can now also be utilized with frameworks such as Robot Framework and it's not anymore dependent on the usage of Appium which makes its usage more flexible.
 
-Library: <https://github.com/severi/opencv_library>
+Library: <https://github.com/bitbar/opencv-library>

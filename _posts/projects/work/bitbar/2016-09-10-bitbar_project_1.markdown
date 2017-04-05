@@ -1,5 +1,5 @@
 ---
-name: Nightwatch Appium Sample Project For Testdroid
+name: Bitbar Inc - Nightwatch Appium Sample Project For Testdroid
 when: 09/2016–09/2016
 role: Software Engineer
 keywords: Javascript, Nightwatch, Appium, Testdroid

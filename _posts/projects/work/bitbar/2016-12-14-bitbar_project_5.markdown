@@ -1,5 +1,5 @@
 ---
-name: Java Appium Testdroid Example
+name: Bitbar Inc - Java Appium Testdroid Example
 when: 12/2016
 role: Software Engineer
 keywords: Java, Appium, Refactoring, Testdroid

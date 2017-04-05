@@ -1,5 +1,5 @@
 ---
-name: Cucumber Appium Sample Project For Testdroid
+name: Bitbar Inc - Cucumber Appium Sample Project For Testdroid
 when: 09/2016–09/2016
 role: Software Engineer
 keywords: Java, Appium, Cucumber, Testdroid
