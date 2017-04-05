@@ -1,13 +1,11 @@
 ---
 name: Location-based mobile app
-when: 12/2015-
+when: 12/2015-02/2016 & 01/2017-
 role: Programmer
-keywords:  Ionic, Ansible, Vagrant
+keywords:  React Native, Redux, Docker, Docker Compose, NodeJS, Microservices, HAProxy, Ionic, Ansible, Vagrant
 
 layout: col-1
 category: personal
 ---
 
-Currently developing an app using Ionic-framework that visualizes data based on users location. I have set up a development environment for the project using Vagrant and Ansible.
-
-
+Currently working on an app that visualizes data based on user's location. The app is developed using React Native utilizing Redux. The backend is implemented using NodeJS and it is utilizing Docker Compose and Microservices-architecture.
